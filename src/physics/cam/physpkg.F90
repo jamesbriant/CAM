@@ -36,7 +36,8 @@ module physpkg
   use modal_aero_wateruptake, only: modal_aero_wateruptake_init, modal_aero_wateruptake_dr, modal_aero_wateruptake_reg
 
    ! Custom 
-   use cam_nn,             only: torch_inference
+   ! use cam_nn,             only: torch_inference
+   use cam_gp,             only: torch_inference
 
   implicit none
   private
